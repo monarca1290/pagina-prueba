@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemology Institute - Professional Emerald Certification & Training</title>
+    <meta name="description" content="Professional gemology institute specializing in emerald certification, advanced training programs, and laboratory services. Trusted by gemologists worldwide.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Gemology Institute</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#courses" class="nav-link">Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section id="home" class="hero">
+        <div class="carousel">
+            <!-- Slide 1 -->
+            <div class="carousel-slide active">
+                <div class="carousel-image" style="background-image: url('img/hero.png');"></div>
+                <div class="carousel-overlay"></div>
+                <div class="carousel-content">
+                    <h1 class="carousel-title">Excellence in Gemology</h1>
+                    <p class="carousel-subtitle">Professional emerald certification, advanced training programs, and cutting-edge laboratory services for the global gemology community.</p>
+                    <div class="carousel-buttons">
+                        <a href="#services" class="btn btn-primary">Our Services</a>
+                        <a href="#courses" class="btn btn-secondary">View Courses</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-slide">
+                <div class="carousel-image" style="background-image: url('img/IMG_20220906_133944.jpg');"></div>
+                <div class="carousel-overlay"></div>
+                <div class="carousel-content">
+                    <h1 class="carousel-title">World-Class Certification</h1>
+                    <p class="carousel-subtitle">Get internationally recognized certification from industry-leading gemologists with over 35 years of experience.</p>
+                    <div class="carousel-buttons">
+                        <a href="#services" class="btn btn-primary">Get Certified</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel-slide">
+                <div class="carousel-image" style="background-image: url('img/IMG_20220502_125422.jpg');"></div>
+                <div class="carousel-overlay"></div>
+                <div class="carousel-content">
+                    <h1 class="carousel-title">Advanced Training Programs</h1>
+                    <p class="carousel-subtitle">Master emerald identification and analysis with hands-on training using state-of-the-art laboratory equipment.</p>
+                    <div class="carousel-buttons">
+                        <a href="#courses" class="btn btn-primary">Explore Courses</a>
+                        <a href="#services" class="btn btn-secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="carousel-control next" onclick="changeSlide(1)">&#10095;</button>
+
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <span class="indicator active" onclick="goToSlide(0)"></span>
+            <span class="indicator" onclick="goToSlide(1)"></span>
+            <span class="indicator" onclick="goToSlide(2)"></span>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Services</h2>
+                <p class="section-subtitle">Comprehensive gemology solutions for professionals and enthusiasts</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z" fill="#284F25"/>
+                        </svg>
+                    </div>
+                    <h3>Emerald Certification</h3>
+                    <p>Professional certification services for emerald authenticity, quality assessment, and origin determination using advanced gemological techniques.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" fill="#284F25"/>
+                            <path d="M2 17L12 22L22 17" stroke="#284F25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="#284F25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Laboratory Services</h3>
+                    <p>State-of-the-art laboratory facilities equipped with the latest gemological instruments for precise analysis and testing.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 12H18L15 21L9 3L6 12H2" stroke="#284F25" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Professional Training</h3>
+                    <p>Comprehensive training programs designed for gemologists, jewelers, and industry professionals seeking advanced certification.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Courses</h2>
+                <p class="section-subtitle">Master the art and science of gemology with our expert-led programs</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-overlay">
+                            <span class="course-level">Beginner</span>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Basic Gemology Fundamentals</h3>
+                        <p>Introduction to gemological principles, identification techniques, and basic testing methods for gemstone professionals.</p>
+                        <div class="course-meta">
+                            <span class="course-duration">6 weeks</span>
+                            <span class="course-price">$1,200</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+                <div class="course-card featured">
+                    <div class="course-badge">Most Popular</div>
+                    <div class="course-image">
+                        <div class="course-overlay">
+                            <span class="course-level">Advanced</span>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Emerald Specialization Program</h3>
+                        <p>Comprehensive training in emerald identification, treatment detection, and origin determination using advanced analytical techniques.</p>
+                        <div class="course-meta">
+                            <span class="course-duration">12 weeks</span>
+                            <span class="course-price">$2,800</span>
+                        </div>
+                        <a href="#" class="btn btn-primary">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <div class="course-image">
+                        <div class="course-overlay">
+                            <span class="course-level">Expert</span>
+                        </div>
+                    </div>
+                    <div class="course-content">
+                        <h3>Laboratory Techniques Mastery</h3>
+                        <p>Advanced laboratory techniques, instrumentation operation, and scientific analysis methods for professional gemologists.</p>
+                        <div class="course-meta">
+                            <span class="course-duration">8 weeks</span>
+                            <span class="course-price">$2,200</span>
+                        </div>
+                        <a href="#" class="btn btn-outline">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What Our Students Say</h2>
+                <p class="section-subtitle">Trusted by professionals worldwide</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The emerald specialization program transformed my understanding of gem identification. The instructors are world-class experts who provide hands-on training with cutting-edge equipment."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Dr. Sarah Chen</h4>
+                            <span>Senior Gemologist, Tiffany & Co.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Exceptional laboratory facilities and comprehensive training. The certification I received here opened doors to opportunities I never thought possible in the gemology field."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Michael Rodriguez</h4>
+                            <span>Independent Gemologist</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The institute's commitment to scientific excellence and professional development is unmatched. Their expertise in emerald analysis is truly world-renowned."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-info">
+                            <h4>Prof. Elena Volkov</h4>
+                            <span>Director, Moscow Gemological Center</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Ready to advance your gemology career? Contact us to learn more about our programs and services.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <h4>Email</h4>
+                            <p>info@gemologyinstitute.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Phone</h4>
+                            <p>+1 (555) 123-4567</p>
+                        </div>
+                        <div class="contact-item">
+                            <h4>Address</h4>
+                            <p>123 Gemology Lane<br>New York, NY 10001</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <select id="interest" name="interest" required>
+                            <option value="">Select Your Interest</option>
+                            <option value="certification">Emerald Certification</option>
+                            <option value="training">Professional Training</option>
+                            <option value="laboratory">Laboratory Services</option>
+                            <option value="consultation">Consultation</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Gemology Institute</h3>
+                    <p>Excellence in gemological education and professional certification since 1985.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Certifications</h4>
+                    <ul>
+                        <li><a href="#">GIA Certified</a></li>
+                        <li><a href="#">IGI Accredited</a></li>
+                        <li><a href="#">ISO 9001</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Gemology Institute. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
